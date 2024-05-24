@@ -1,0 +1,48 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/2.0.1
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/Yousaf95/JAVA:
+      branch: main
+      repo: https://github.com/Yousaf95/JAVA.git
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/Yousaf95/JAVA git:
+        commands:
+        - /usr/bin/env sh .sqa/script.frumpy-chestnut-tarantula.sh
+        container: qc.acc_stinky-emerald-lion
+  QC.Doc:
+    repos:
+      github.com/Yousaf95/JAVA find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.droopy-coral-skunk.sh
+        container: qc.doc_breezy-periwinkle-chameleon
+      github.com/Yousaf95/JAVA git:
+        commands:
+        - /usr/bin/env sh .sqa/script.pasty-ecru-barnacle.sh
+        container: qc.doc_breezy-yellow-seal
+  QC.Lic:
+    repos:
+      github.com/Yousaf95/JAVA licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.craggy-malachite-capuchin.sh
+        container: qc.lic_scummy-gold-snake
+  QC.Sty:
+    repos:
+      github.com/Yousaf95/JAVA checkstyle:
+        commands:
+        - /usr/bin/env sh .sqa/script.fuzzy-dandelion-pinscher.sh
+        container: qc.sty_trippy-carmine-mayfly
+  QC.Ver:
+    repos:
+      github.com/Yousaf95/JAVA get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.clammy-saffron-woodlouse.sh
+        container: qc.ver_dorky-puce-boar
+timeout: 5400
