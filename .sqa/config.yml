@@ -15,34 +15,34 @@ sqa_criteria:
     repos:
       github.com/Yousaf95/JAVA git:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-chestnut-tarantula.sh
-        container: qc.acc_stinky-emerald-lion
+        - /usr/bin/env sh .sqa/script.slaphappy-amaranth-shark.sh
+        container: qc.acc_thirsty-bistre-capuchin
   QC.Doc:
     repos:
       github.com/Yousaf95/JAVA find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-coral-skunk.sh
-        container: qc.doc_breezy-periwinkle-chameleon
+        - /usr/bin/env sh .sqa/script.sleepy-aquamarine-heron.sh
+        container: qc.doc_slimy-vermilion-molly
       github.com/Yousaf95/JAVA git:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-ecru-barnacle.sh
-        container: qc.doc_breezy-yellow-seal
+        - /usr/bin/env sh .sqa/script.bumpy-orchid-chihuahua.sh
+        container: qc.doc_smelly-harlequin-magpie
   QC.Lic:
     repos:
       github.com/Yousaf95/JAVA licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-malachite-capuchin.sh
-        container: qc.lic_scummy-gold-snake
+        - /usr/bin/env sh .sqa/script.flimsy-chartreuse-eel.sh
+        container: qc.lic_messy-puce-caracal
   QC.Sty:
     repos:
       github.com/Yousaf95/JAVA checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-dandelion-pinscher.sh
-        container: qc.sty_trippy-carmine-mayfly
+        - /usr/bin/env sh .sqa/script.nippy-cyan-angora.sh
+        container: qc.sty_breezy-lilac-frise
   QC.Ver:
     repos:
       github.com/Yousaf95/JAVA get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-saffron-woodlouse.sh
-        container: qc.ver_dorky-puce-boar
+        - /usr/bin/env sh .sqa/script.gloppy-cerise-saola.sh
+        container: qc.ver_scaly-vermilion-tarsier
 timeout: 5400
