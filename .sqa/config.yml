@@ -15,34 +15,34 @@ sqa_criteria:
     repos:
       github.com/Yousaf95/JAVA git:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-amaranth-shark.sh
-        container: qc.acc_thirsty-bistre-capuchin
+        - /usr/bin/env sh .sqa/script.boozy-mauve-jackal.sh
+        container: qc.acc_chummy-flax-hummingbird
   QC.Doc:
     repos:
       github.com/Yousaf95/JAVA find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-aquamarine-heron.sh
-        container: qc.doc_slimy-vermilion-molly
+        - /usr/bin/env sh .sqa/script.gummy-dandelion-bordeaux.sh
+        container: qc.doc_whiny-red-beaver
       github.com/Yousaf95/JAVA git:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-orchid-chihuahua.sh
-        container: qc.doc_smelly-harlequin-magpie
+        - /usr/bin/env sh .sqa/script.gamy-emerald-impala.sh
+        container: qc.doc_breezy-asparagus-millipede
   QC.Lic:
     repos:
       github.com/Yousaf95/JAVA licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-chartreuse-eel.sh
-        container: qc.lic_messy-puce-caracal
+        - /usr/bin/env sh .sqa/script.chummy-denim-angelfish.sh
+        container: qc.lic_tasty-burgundy-rhinoceros
   QC.Sty:
     repos:
       github.com/Yousaf95/JAVA checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-cyan-angora.sh
-        container: qc.sty_breezy-lilac-frise
+        - /usr/bin/env sh .sqa/script.lumpy-pear-gibbon.sh
+        container: qc.sty_flabby-indigo-opossum
   QC.Ver:
     repos:
       github.com/Yousaf95/JAVA get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-cerise-saola.sh
-        container: qc.ver_scaly-vermilion-tarsier
+        - /usr/bin/env sh .sqa/script.ugly-ivory-fousek.sh
+        container: qc.ver_slaphappy-grey-saola
 timeout: 5400
