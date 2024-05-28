@@ -15,34 +15,34 @@ sqa_criteria:
     repos:
       github.com/Yousaf95/JAVA git:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-mauve-jackal.sh
-        container: qc.acc_chummy-flax-hummingbird
+        - /usr/bin/env sh .sqa/script.snoopy-black-akita.sh
+        container: qc.acc_shabby-lime-heron
   QC.Doc:
     repos:
       github.com/Yousaf95/JAVA find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-dandelion-bordeaux.sh
-        container: qc.doc_whiny-red-beaver
+        - /usr/bin/env sh .sqa/script.muzzy-scarlet-shrimp.sh
+        container: qc.doc_hazy-auburn-beaver
       github.com/Yousaf95/JAVA git:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-emerald-impala.sh
-        container: qc.doc_breezy-asparagus-millipede
+        - /usr/bin/env sh .sqa/script.goopy-razzmatazz-sparrow.sh
+        container: qc.doc_wheezy-olive-kingfisher
   QC.Lic:
     repos:
       github.com/Yousaf95/JAVA licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-denim-angelfish.sh
-        container: qc.lic_tasty-burgundy-rhinoceros
+        - /usr/bin/env sh .sqa/script.stealthy-ochre-chin.sh
+        container: qc.lic_wheezy-ecru-mau
   QC.Sty:
     repos:
       github.com/Yousaf95/JAVA checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-pear-gibbon.sh
-        container: qc.sty_flabby-indigo-opossum
+        - /usr/bin/env sh .sqa/script.muzzy-wheat-koala.sh
+        container: qc.sty_pokey-flax-ocelot
   QC.Ver:
     repos:
       github.com/Yousaf95/JAVA get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-ivory-fousek.sh
-        container: qc.ver_slaphappy-grey-saola
+        - /usr/bin/env sh .sqa/script.tacky-xanthic-dragon.sh
+        container: qc.ver_fuzzy-purple-moose
 timeout: 5400
